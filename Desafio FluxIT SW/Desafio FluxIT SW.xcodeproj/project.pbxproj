@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		262A940F26D6C08100578C09 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A940E26D6C08100578C09 /* CharacterCollectionViewCell.swift */; };
+		262A941226D6C0A300578C09 /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262A941126D6C0A300578C09 /* CharacterCollectionViewCell.xib */; };
+		262FDAB526C2ED7E00CB2FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262FDAB426C2ED7E00CB2FE2 /* AppDelegate.swift */; };
+		262FDAB726C2ED7E00CB2FE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262FDAB626C2ED7E00CB2FE2 /* SceneDelegate.swift */; };
+		262FDABC26C2ED7E00CB2FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262FDABA26C2ED7E00CB2FE2 /* Main.storyboard */; };
+		262FDABE26C2ED8000CB2FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262FDABD26C2ED8000CB2FE2 /* Assets.xcassets */; };
+		262FDAC126C2ED8000CB2FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262FDABF26C2ED8000CB2FE2 /* LaunchScreen.storyboard */; };
+		2647E73C26D33B85005CD638 /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2647E73B26D33B85005CD638 /* FilmTableViewCell.xib */; };
+		2647E74326D33BF4005CD638 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647E74226D33BF4005CD638 /* FilmTableViewCell.swift */; };
+		2647E74626D33D5A005CD638 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647E74526D33D5A005CD638 /* MainTableViewController.swift */; };
+		2647E74926D33DAB005CD638 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647E74826D33DAB005CD638 /* MainPresenter.swift */; };
+		26CAC2F126C451A100F10060 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAC2F026C451A100F10060 /* Film.swift */; };
+		26CAC2FC26C46B3400F10060 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAC2FB26C46B3400F10060 /* MainService.swift */; };
+		26CAC2FF26C46D4A00F10060 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAC2FE26C46D4A00F10060 /* Character.swift */; };
+		70754844D5EAFEBED831BA6E /* Pods_Desafio_FluxIT_SW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA51D98216842C08A48AEDD3 /* Pods_Desafio_FluxIT_SW.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		262A940E26D6C08100578C09 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		262A941126D6C0A300578C09 /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		262FDAB126C2ED7E00CB2FE2 /* Desafio FluxIT SW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio FluxIT SW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		262FDAB426C2ED7E00CB2FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		262FDAB626C2ED7E00CB2FE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		262FDABB26C2ED7E00CB2FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		262FDABD26C2ED8000CB2FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		262FDAC026C2ED8000CB2FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		262FDAC226C2ED8000CB2FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2647E73B26D33B85005CD638 /* FilmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
+		2647E74226D33BF4005CD638 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		2647E74526D33D5A005CD638 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		2647E74826D33DAB005CD638 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		26CAC2F026C451A100F10060 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		26CAC2FB26C46B3400F10060 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		26CAC2FE26C46D4A00F10060 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		2859E6D2F3FCCFE8A66DFD9E /* Pods-Desafio FluxIT SW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio FluxIT SW.debug.xcconfig"; path = "Target Support Files/Pods-Desafio FluxIT SW/Pods-Desafio FluxIT SW.debug.xcconfig"; sourceTree = "<group>"; };
+		85B4A7058D26A20D85C8E20C /* Pods-Desafio FluxIT SW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio FluxIT SW.release.xcconfig"; path = "Target Support Files/Pods-Desafio FluxIT SW/Pods-Desafio FluxIT SW.release.xcconfig"; sourceTree = "<group>"; };
+		CA51D98216842C08A48AEDD3 /* Pods_Desafio_FluxIT_SW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_FluxIT_SW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		262FDAAE26C2ED7E00CB2FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70754844D5EAFEBED831BA6E /* Pods_Desafio_FluxIT_SW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		262FDAA826C2ED7E00CB2FE2 = {
+			isa = PBXGroup;
+			children = (
+				262FDAB326C2ED7E00CB2FE2 /* Desafio FluxIT SW */,
+				262FDAB226C2ED7E00CB2FE2 /* Products */,
+				CED0A7A02E67A6E9E22CA720 /* Pods */,
+				FC66FBB3DDD0D3FBC828E458 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		262FDAB226C2ED7E00CB2FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				262FDAB126C2ED7E00CB2FE2 /* Desafio FluxIT SW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		262FDAB326C2ED7E00CB2FE2 /* Desafio FluxIT SW */ = {
+			isa = PBXGroup;
+			children = (
+				26CAC2F826C4556A00F10060 /* Main */,
+				26CAC2F726C4556400F10060 /* Service */,
+				26CAC2F626C4555E00F10060 /* Model */,
+				26CAC2F526C4555100F10060 /* Views */,
+				26CAC2F426C4554A00F10060 /* ViewControllers */,
+				26CAC2F326C4554000F10060 /* Resuorces */,
+			);
+			path = "Desafio FluxIT SW";
+			sourceTree = "<group>";
+		};
+		26CAC2F326C4554000F10060 /* Resuorces */ = {
+			isa = PBXGroup;
+			children = (
+				262FDABD26C2ED8000CB2FE2 /* Assets.xcassets */,
+			);
+			path = Resuorces;
+			sourceTree = "<group>";
+		};
+		26CAC2F426C4554A00F10060 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				262FDABA26C2ED7E00CB2FE2 /* Main.storyboard */,
+				262FDABF26C2ED8000CB2FE2 /* LaunchScreen.storyboard */,
+				2647E74526D33D5A005CD638 /* MainTableViewController.swift */,
+				2647E74826D33DAB005CD638 /* MainPresenter.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		26CAC2F526C4555100F10060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2647E73B26D33B85005CD638 /* FilmTableViewCell.xib */,
+				2647E74226D33BF4005CD638 /* FilmTableViewCell.swift */,
+				262A941126D6C0A300578C09 /* CharacterCollectionViewCell.xib */,
+				262A940E26D6C08100578C09 /* CharacterCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26CAC2F626C4555E00F10060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26CAC2F026C451A100F10060 /* Film.swift */,
+				26CAC2FE26C46D4A00F10060 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26CAC2F726C4556400F10060 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				26CAC2FB26C46B3400F10060 /* MainService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		26CAC2F826C4556A00F10060 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				262FDAB426C2ED7E00CB2FE2 /* AppDelegate.swift */,
+				262FDAB626C2ED7E00CB2FE2 /* SceneDelegate.swift */,
+				262FDAC226C2ED8000CB2FE2 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CED0A7A02E67A6E9E22CA720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2859E6D2F3FCCFE8A66DFD9E /* Pods-Desafio FluxIT SW.debug.xcconfig */,
+				85B4A7058D26A20D85C8E20C /* Pods-Desafio FluxIT SW.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC66FBB3DDD0D3FBC828E458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA51D98216842C08A48AEDD3 /* Pods_Desafio_FluxIT_SW.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		262FDAB026C2ED7E00CB2FE2 /* Desafio FluxIT SW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 262FDAC526C2ED8000CB2FE2 /* Build configuration list for PBXNativeTarget "Desafio FluxIT SW" */;
+			buildPhases = (
+				D04FDCCD19F1CAA52E891234 /* [CP] Check Pods Manifest.lock */,
+				262FDAAD26C2ED7E00CB2FE2 /* Sources */,
+				262FDAAE26C2ED7E00CB2FE2 /* Frameworks */,
+				262FDAAF26C2ED7E00CB2FE2 /* Resources */,
+				206639DFC0C790399FA275B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio FluxIT SW";
+			productName = "Desafio FluxIT SW";
+			productReference = 262FDAB126C2ED7E00CB2FE2 /* Desafio FluxIT SW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		262FDAA926C2ED7E00CB2FE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					262FDAB026C2ED7E00CB2FE2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 262FDAAC26C2ED7E00CB2FE2 /* Build configuration list for PBXProject "Desafio FluxIT SW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 262FDAA826C2ED7E00CB2FE2;
+			productRefGroup = 262FDAB226C2ED7E00CB2FE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				262FDAB026C2ED7E00CB2FE2 /* Desafio FluxIT SW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		262FDAAF26C2ED7E00CB2FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262FDAC126C2ED8000CB2FE2 /* LaunchScreen.storyboard in Resources */,
+				2647E73C26D33B85005CD638 /* FilmTableViewCell.xib in Resources */,
+				262FDABE26C2ED8000CB2FE2 /* Assets.xcassets in Resources */,
+				262A941226D6C0A300578C09 /* CharacterCollectionViewCell.xib in Resources */,
+				262FDABC26C2ED7E00CB2FE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		206639DFC0C790399FA275B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio FluxIT SW/Pods-Desafio FluxIT SW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio FluxIT SW/Pods-Desafio FluxIT SW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desafio FluxIT SW/Pods-Desafio FluxIT SW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04FDCCD19F1CAA52E891234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio FluxIT SW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		262FDAAD26C2ED7E00CB2FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2647E74326D33BF4005CD638 /* FilmTableViewCell.swift in Sources */,
+				26CAC2FC26C46B3400F10060 /* MainService.swift in Sources */,
+				26CAC2F126C451A100F10060 /* Film.swift in Sources */,
+				262A940F26D6C08100578C09 /* CharacterCollectionViewCell.swift in Sources */,
+				2647E74926D33DAB005CD638 /* MainPresenter.swift in Sources */,
+				2647E74626D33D5A005CD638 /* MainTableViewController.swift in Sources */,
+				26CAC2FF26C46D4A00F10060 /* Character.swift in Sources */,
+				262FDAB526C2ED7E00CB2FE2 /* AppDelegate.swift in Sources */,
+				262FDAB726C2ED7E00CB2FE2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		262FDABA26C2ED7E00CB2FE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				262FDABB26C2ED7E00CB2FE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		262FDABF26C2ED8000CB2FE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				262FDAC026C2ED8000CB2FE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		262FDAC326C2ED8000CB2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		262FDAC426C2ED8000CB2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		262FDAC626C2ED8000CB2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2859E6D2F3FCCFE8A66DFD9E /* Pods-Desafio FluxIT SW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z33FKGG9KH;
+				INFOPLIST_FILE = "Desafio FluxIT SW/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com-yasmin.Desafio-FluxIT-SW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		262FDAC726C2ED8000CB2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B4A7058D26A20D85C8E20C /* Pods-Desafio FluxIT SW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z33FKGG9KH;
+				INFOPLIST_FILE = "Desafio FluxIT SW/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com-yasmin.Desafio-FluxIT-SW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		262FDAAC26C2ED7E00CB2FE2 /* Build configuration list for PBXProject "Desafio FluxIT SW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262FDAC326C2ED8000CB2FE2 /* Debug */,
+				262FDAC426C2ED8000CB2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		262FDAC526C2ED8000CB2FE2 /* Build configuration list for PBXNativeTarget "Desafio FluxIT SW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262FDAC626C2ED8000CB2FE2 /* Debug */,
+				262FDAC726C2ED8000CB2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 262FDAA926C2ED7E00CB2FE2 /* Project object */;
+}
