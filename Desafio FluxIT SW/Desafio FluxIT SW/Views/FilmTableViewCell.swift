@@ -17,6 +17,8 @@ class FilmTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        characterCollectionView.layer.cornerRadius = 5
+        characterCollectionView.backgroundColor = .white
         characterCollectionView.delegate = self
         characterCollectionView.dataSource = self
         characterCollectionView.register(UINib(nibName: "CharacterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CharacterCollectionViewCell")
@@ -49,6 +51,5 @@ extension FilmTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
         }
         return cell
     }
-    
     
 }

@@ -19,6 +19,7 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
         presenter = MainPresenter(view: self)
         presenter?.callFilms()
+        tableView.backgroundColor = .black
         tableView.register(UINib(nibName: "FilmTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmTableViewCell")
     }
 

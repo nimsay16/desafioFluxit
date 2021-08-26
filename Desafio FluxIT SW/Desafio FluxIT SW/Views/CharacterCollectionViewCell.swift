@@ -13,6 +13,7 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var genderLabel: UILabel!
     
     func setUpCollectionCell(character : Character){
+        self.layer.cornerRadius = 5 
         nameLabel.text = character.name
         genderLabel.text = character.gender
     }
