@@ -79,6 +79,7 @@ extension FilmDetailPresenter : FilmDetailPresenterProtocol{
     func setDataPlanetsVehicles(){
         planetsAndVehicles =  PlanetsVehicles(planets: planets, vehicles: vehicles, numberOfItems: [planets.count,vehicles.count], nameOfItems: ["Planets", "Vehicles"])
         view?.tableViewReloadData()
+        view?.stopAnimation()
     }
     
     func getDataPlanetsVehicles() -> PlanetsVehicles?{

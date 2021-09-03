@@ -49,8 +49,9 @@ extension MainPresenter : MainPresenterProtocol{
             if !error{
                 self?.characters.append(result)
                 self?.view?.reloadTableViewData()
+                self?.view?.stopAnimation()
             }else{
-                print("error")
+                self?.view?.stopAnimation()
             }
         }
         

@@ -9,6 +9,7 @@ import UIKit
 
 protocol FilmDetailViewProtocol : AnyObject{
     func tableViewReloadData()
+    func stopAnimation()
 }
 
 class FilmDetailViewController: UIViewController {
@@ -17,11 +18,13 @@ class FilmDetailViewController: UIViewController {
     @IBOutlet weak var directorLabel: UILabel!
     @IBOutlet weak var producerLabel: UILabel!
     @IBOutlet weak var planetsVehiclesTableView: UITableView!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
     var presenter : FilmDetailPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadingView.startAnimating()
         setLabels()
         presenter?.callPlanets()
         setTable()
@@ -90,5 +93,10 @@ extension FilmDetailViewController : FilmDetailViewProtocol{
     func tableViewReloadData(){
         planetsVehiclesTableView.reloadData()
     }
+    func stopAnimation(){
+        loadingView.stopAnimating()
+        loadingView.isHidden = true
+    }
+    
 }
 

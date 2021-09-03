@@ -9,14 +9,17 @@ import UIKit
 
 protocol MainPresenterViewProtocol : AnyObject{
     func reloadTableViewData()
+    func stopAnimation()
 }
 
 class MainTableViewController: UITableViewController {
 
     var presenter : MainPresenterProtocol?
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadingView.startAnimating()
         presenter = MainPresenter(view: self)
         presenter?.callFilms()
         tableView.backgroundColor = .black
@@ -57,5 +60,8 @@ class MainTableViewController: UITableViewController {
 extension MainTableViewController : MainPresenterViewProtocol{
     func reloadTableViewData(){
         tableView.reloadData()
+    }
+    func stopAnimation(){
+        loadingView.stopAnimating()
     }
 }

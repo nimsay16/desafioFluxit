@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="Skc-4X-qtj">
+                            <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="b0M-00-1jW">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -32,6 +39,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1Jl-rd-aIh"/>
+                    <connections>
+                        <outlet property="loadingView" destination="Skc-4X-qtj" id="L7z-Nl-BxT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3e-IL-g7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,8 +75,17 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6E-hz-j5r">
                                 <rect key="frame" x="0.0" y="220" width="414" height="676"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kB9-na-A0N">
+                                <rect key="frame" x="182" y="428" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="nf5-FB-ylX"/>
+                                    <constraint firstAttribute="height" constant="50" id="yGg-no-S3e"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8fO-Sx-O2a"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
@@ -78,7 +97,9 @@
                             <constraint firstItem="N6E-hz-j5r" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="SYd-Og-A9o"/>
                             <constraint firstItem="N6E-hz-j5r" firstAttribute="width" secondItem="8eE-FY-IEv" secondAttribute="width" id="VGK-N5-2yl"/>
                             <constraint firstItem="VUG-tD-eAb" firstAttribute="top" secondItem="w1a-br-bdm" secondAttribute="bottom" constant="24" id="XMP-07-BtY"/>
+                            <constraint firstItem="kB9-na-A0N" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="hfe-9x-QtS"/>
                             <constraint firstItem="w1a-br-bdm" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="pRo-K4-nIi"/>
+                            <constraint firstItem="kB9-na-A0N" firstAttribute="centerY" secondItem="8fO-Sx-O2a" secondAttribute="centerY" id="rt2-Ae-YKI"/>
                             <constraint firstItem="p7e-DP-mup" firstAttribute="top" secondItem="8fO-Sx-O2a" secondAttribute="top" constant="35" id="sqF-rS-WKe"/>
                             <constraint firstItem="N6E-hz-j5r" firstAttribute="top" secondItem="VUG-tD-eAb" secondAttribute="bottom" constant="29" id="wPd-hx-58g"/>
                         </constraints>
@@ -86,6 +107,7 @@
                     <navigationItem key="navigationItem" id="GA2-sL-LOC"/>
                     <connections>
                         <outlet property="directorLabel" destination="w1a-br-bdm" id="E6V-bj-oxU"/>
+                        <outlet property="loadingView" destination="kB9-na-A0N" id="GXn-x5-FqJ"/>
                         <outlet property="planetsVehiclesTableView" destination="N6E-hz-j5r" id="iTk-1K-ehb"/>
                         <outlet property="producerLabel" destination="VUG-tD-eAb" id="nZh-gW-DKH"/>
                         <outlet property="titleLabel" destination="p7e-DP-mup" id="xWm-Rm-GUq"/>
