@@ -46,6 +46,12 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FilmDetailViewController") as? FilmDetailViewController, let film = presenter?.getFilms()[indexPath.row]{
+            viewController.presenter = FilmDetailPresenter(view: viewController, film: film)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
     
 }
 extension MainTableViewController : MainPresenterViewProtocol{

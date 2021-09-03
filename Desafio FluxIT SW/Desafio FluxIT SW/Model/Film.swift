@@ -13,6 +13,8 @@ struct Film : Decodable{
     let producer : String
     let characters : [String]
     let opening : String
+    let planets : [String]
+    let vehicles : [String]
     
     enum CodingKeys: String, CodingKey {
         case title = "title"
@@ -20,6 +22,8 @@ struct Film : Decodable{
         case producer = "producer"
         case characters = "characters"
         case opening = "opening_crawl"
+        case planets = "planets"
+        case vehicles = "vehicles"
     }
 }
 

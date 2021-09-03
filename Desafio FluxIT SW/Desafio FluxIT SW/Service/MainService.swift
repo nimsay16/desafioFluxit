@@ -54,4 +54,49 @@ final class MainService  {
             }
         }
     }
+    
+    func callDataPlanets(URL : String, success: @escaping (Planet?, Bool)->Void){
+        let URL = URL
+        AF.request(URL).responseJSON {(result) in
+            switch result.result{
+            case .success:
+                if let data = result.data{
+                    let decoder = JSONDecoder()
+                    do{
+                        let values = try decoder.decode(Planet.self, from: data)
+                        success(values, false)
+                    }catch{
+                        success(nil, true)
+                        print("parsing fail")
+                    }
+                }
+            case .failure:
+                success(nil, true)
+                print("service fail")
+            }
+        }
+    }
+    
+    func callDataVehicles(URL : String, success: @escaping (Vehicle?, Bool)->Void){
+        let URL = URL
+        AF.request(URL).responseJSON {(result) in
+            switch result.result{
+            case .success:
+                if let data = result.data{
+                    let decoder = JSONDecoder()
+                    do{
+                        let values = try decoder.decode(Vehicle.self, from: data)
+                        success(values, false)
+                    }catch{
+                        success(nil, true)
+                        print("parsing fail")
+                    }
+                }
+            case .failure:
+                success(nil, true)
+                print("service fail")
+            }
+        }
+    }
+    
 }

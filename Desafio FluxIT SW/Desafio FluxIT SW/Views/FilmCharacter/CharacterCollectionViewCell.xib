@@ -32,10 +32,10 @@
                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="Vxn-ud-Kll" firstAttribute="leading" secondItem="uaN-sc-2g0" secondAttribute="leading" constant="8" id="9e6-8m-970"/>
+                    <constraint firstAttribute="bottom" secondItem="LRp-ni-6l2" secondAttribute="bottom" constant="24" id="KV8-dt-l7U"/>
                     <constraint firstAttribute="trailing" secondItem="Vxn-ud-Kll" secondAttribute="trailing" constant="6" id="QTT-rd-Fkn"/>
                     <constraint firstItem="Vxn-ud-Kll" firstAttribute="top" secondItem="uaN-sc-2g0" secondAttribute="top" constant="20" id="Tf3-oZ-pJd"/>
                     <constraint firstItem="LRp-ni-6l2" firstAttribute="centerX" secondItem="uaN-sc-2g0" secondAttribute="centerX" id="V1X-8b-AEo"/>
-                    <constraint firstItem="LRp-ni-6l2" firstAttribute="top" secondItem="Vxn-ud-Kll" secondAttribute="bottom" constant="29" id="qbB-rE-JM2"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="116" height="106"/>

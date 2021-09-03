@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,6 +37,64 @@
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="67.633928571428569"/>
         </scene>
+        <!--Film Detail View Controller-->
+        <scene sceneID="hHf-9g-8X6">
+            <objects>
+                <viewController storyboardIdentifier="FilmDetailViewController" id="map-mn-TqJ" customClass="FilmDetailViewController" customModule="Desafio_FluxIT_SW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eE-FY-IEv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7e-DP-mup">
+                                <rect key="frame" x="186" y="79" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1a-br-bdm">
+                                <rect key="frame" x="186" y="125" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-tD-eAb">
+                                <rect key="frame" x="186" y="170" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6E-hz-j5r">
+                                <rect key="frame" x="0.0" y="220" width="414" height="676"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8fO-Sx-O2a"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="w1a-br-bdm" firstAttribute="top" secondItem="p7e-DP-mup" secondAttribute="bottom" constant="25" id="0dH-Kw-q6O"/>
+                            <constraint firstItem="p7e-DP-mup" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="8Th-QF-vaa"/>
+                            <constraint firstItem="N6E-hz-j5r" firstAttribute="bottom" secondItem="8fO-Sx-O2a" secondAttribute="bottom" constant="34" id="F0d-wg-DuT"/>
+                            <constraint firstItem="VUG-tD-eAb" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="Rwx-4c-dlN"/>
+                            <constraint firstItem="N6E-hz-j5r" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="SYd-Og-A9o"/>
+                            <constraint firstItem="N6E-hz-j5r" firstAttribute="width" secondItem="8eE-FY-IEv" secondAttribute="width" id="VGK-N5-2yl"/>
+                            <constraint firstItem="VUG-tD-eAb" firstAttribute="top" secondItem="w1a-br-bdm" secondAttribute="bottom" constant="24" id="XMP-07-BtY"/>
+                            <constraint firstItem="w1a-br-bdm" firstAttribute="centerX" secondItem="8fO-Sx-O2a" secondAttribute="centerX" id="pRo-K4-nIi"/>
+                            <constraint firstItem="p7e-DP-mup" firstAttribute="top" secondItem="8fO-Sx-O2a" secondAttribute="top" constant="35" id="sqF-rS-WKe"/>
+                            <constraint firstItem="N6E-hz-j5r" firstAttribute="top" secondItem="VUG-tD-eAb" secondAttribute="bottom" constant="29" id="wPd-hx-58g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GA2-sL-LOC"/>
+                    <connections>
+                        <outlet property="directorLabel" destination="w1a-br-bdm" id="E6V-bj-oxU"/>
+                        <outlet property="planetsVehiclesTableView" destination="N6E-hz-j5r" id="iTk-1K-ehb"/>
+                        <outlet property="producerLabel" destination="VUG-tD-eAb" id="nZh-gW-DKH"/>
+                        <outlet property="titleLabel" destination="p7e-DP-mup" id="xWm-Rm-GUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emK-H5-Swr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524.6376811594205" y="67.633928571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cDe-ZZ-EaQ">
             <objects>
@@ -56,6 +115,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

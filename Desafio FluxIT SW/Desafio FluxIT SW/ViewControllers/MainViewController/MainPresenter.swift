@@ -13,7 +13,7 @@ protocol MainPresenterProtocol {
     func getCharacter() -> [Character]
 }
 
-class MainPresenter {
+final class MainPresenter {
     
     weak var view : MainPresenterViewProtocol?
     var films : [Film] = []

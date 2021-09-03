@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetsTableViewCell" rowHeight="88" id="oH8-dp-6IX" customClass="PlanetsTableViewCell" customModule="Desafio_FluxIT_SW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oH8-dp-6IX" id="V7J-sj-1L8">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn6-RR-3mH">
+                        <rect key="frame" x="25" y="49" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-Lh-MwL">
+                        <rect key="frame" x="186" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2f-UN-kPC">
+                        <rect key="frame" x="347" y="49" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Mn6-RR-3mH" secondAttribute="bottom" constant="18" id="6Hz-dE-Dni"/>
+                    <constraint firstItem="Mn6-RR-3mH" firstAttribute="top" secondItem="Q3u-Lh-MwL" secondAttribute="bottom" constant="17" id="9GJ-wj-tBG"/>
+                    <constraint firstAttribute="bottom" secondItem="Z2f-UN-kPC" secondAttribute="bottom" constant="18" id="FgF-pQ-tJm"/>
+                    <constraint firstAttribute="trailing" secondItem="Z2f-UN-kPC" secondAttribute="trailing" constant="25" id="L2r-Hb-G26"/>
+                    <constraint firstItem="Q3u-Lh-MwL" firstAttribute="top" secondItem="V7J-sj-1L8" secondAttribute="top" constant="11" id="ReL-Cv-IaL"/>
+                    <constraint firstItem="Q3u-Lh-MwL" firstAttribute="centerX" secondItem="V7J-sj-1L8" secondAttribute="centerX" id="ruP-60-0OC"/>
+                    <constraint firstItem="Mn6-RR-3mH" firstAttribute="leading" secondItem="V7J-sj-1L8" secondAttribute="leading" constant="25" id="zHV-7Y-AB5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="climateLabel" destination="Z2f-UN-kPC" id="tFm-kc-drg"/>
+                <outlet property="nameLabel" destination="Q3u-Lh-MwL" id="I5p-vk-Cns"/>
+                <outlet property="popultionLabel" destination="Mn6-RR-3mH" id="3gU-o5-xlu"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
